@@ -1,6 +1,6 @@
-class KosherSubstituteController < ApplicationController
+class KosherSubstitutesController < ApplicationController
   def create
-    kosher_substitute = Kosher_substitute.new(
+    kosher_substitute = KosherSubstitute.new(
       name: params[:name],
       ingredient_id: params[:ingredient_id],
       brand: params[:brand],

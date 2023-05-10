@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  ingredient_id: 1
+  ingredient: one
   brand: MyString
   url: MyString
 
 two:
   name: MyString
-  ingredient_id: 1
+  ingredient: one
   brand: MyString
   url: MyString

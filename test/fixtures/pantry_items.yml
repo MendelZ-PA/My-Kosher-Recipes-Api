@@ -3,11 +3,11 @@
 one:
   measurement: MyString
   name: MyString
-  user_id: 1
+  user: one
   is_kosher: false
 
 two:
   measurement: MyString
   name: MyString
-  user_id: 1
+  user: one
   is_kosher: false

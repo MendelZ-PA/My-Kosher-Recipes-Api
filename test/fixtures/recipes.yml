@@ -4,10 +4,10 @@ one:
   name: MyString
   prep_time: MyString
   instructions: MyText
-  user_id: 1
+  user: one
 
 two:
   name: MyString
   prep_time: MyString
   instructions: MyText
-  user_id: 1
+  user: one

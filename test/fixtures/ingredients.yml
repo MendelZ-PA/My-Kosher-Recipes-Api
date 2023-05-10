@@ -3,11 +3,11 @@
 one:
   measurement: MyString
   name: MyString
-  recipe_id: 1
+  recipe: one
   is_kosher: false
 
 two:
   measurement: MyString
   name: MyString
-  recipe_id: 1
+  recipe: one
   is_kosher: false

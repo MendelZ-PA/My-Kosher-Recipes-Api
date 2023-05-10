@@ -1,4 +1,4 @@
-class RecipeController < ApplicationController
+class RecipesController < ApplicationController
   def create
     recipe = Recipe.new(
       name: params[:name],
@@ -6,7 +6,7 @@ class RecipeController < ApplicationController
       instructions: params[:instructions],
       user_id: params[:user_id],
     )
-    if user.save
+    if recipe.save
       render json: { message: "Recipe created successfully" }, status: :created
     else
       render json: { errors: recipe.errors.full_messages }, status: :bad_request

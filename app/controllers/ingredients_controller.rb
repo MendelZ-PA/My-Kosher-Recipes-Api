@@ -1,4 +1,4 @@
-class IngredientController < ApplicationController
+class IngredientsController < ApplicationController
   def create
     ingredient = Ingredient.new(
       measurement: params[:measurement],
