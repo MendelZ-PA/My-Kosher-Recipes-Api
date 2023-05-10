@@ -12,4 +12,12 @@ class KosherSubstitutesController < ApplicationController
       render json: { errors: kosher_substitute.errors.full_messages }, status: :bad_request
     end
   end
+
+  def index
+    @kosher_substitutes = KosherSubstitute.all
+  end
+
+  def show
+    @kosher_substitute = KosherSubstitute.find(params[:id])
+  end
 end

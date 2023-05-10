@@ -14,8 +14,11 @@ class RecipesController < ApplicationController
   end
 
   def index
+    @recipes = Recipe.all
+    render :index
   end
 
   def show
+    @recipes = Recipe.find(params[:id])
   end
 end

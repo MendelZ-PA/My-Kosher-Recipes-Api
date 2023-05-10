@@ -12,4 +12,12 @@ class PantryItemsController < ApplicationController
       render json: { errors: pantry_item.errors.full_messages }, status: :bad_request
     end
   end
+
+  def index
+    @pantry_items = PantryItem.all
+  end
+
+  def show
+    @pantry_item = PantryItem.find(params[:id])
+  end
 end

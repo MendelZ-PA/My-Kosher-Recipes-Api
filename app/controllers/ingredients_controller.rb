@@ -12,4 +12,12 @@ class IngredientsController < ApplicationController
       render json: { errors: ingredient.errors.full_messages }, status: :bad_request
     end
   end
+
+  def index
+    @ingredients = Ingredient.all
+  end
+
+  def show
+    @ingredient = Ingredient.find(params[:id])
+  end
 end
