@@ -12,4 +12,10 @@ class RecipesController < ApplicationController
       render json: { errors: recipe.errors.full_messages }, status: :bad_request
     end
   end
+
+  def index
+  end
+
+  def show
+  end
 end
