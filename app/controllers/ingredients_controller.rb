@@ -15,9 +15,11 @@ class IngredientsController < ApplicationController
 
   def index
     @ingredients = Ingredient.all
+    render json: @ingredients.as_json
   end
 
   def show
     @ingredient = Ingredient.find(params[:id])
+    render json: @ingredient.find_by(params[:id]).as_json
   end
 end

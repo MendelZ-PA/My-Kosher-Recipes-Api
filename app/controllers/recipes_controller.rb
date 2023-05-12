@@ -15,10 +15,11 @@ class RecipesController < ApplicationController
 
   def index
     @recipes = Recipe.all
-    render :index
+    render json: @recipes.as_json
   end
 
   def show
     @recipes = Recipe.find(params[:id])
+    render json: @recipe.find_by(params[:id]).as_json
   end
 end

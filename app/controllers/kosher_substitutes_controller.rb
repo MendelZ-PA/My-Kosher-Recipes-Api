@@ -15,9 +15,11 @@ class KosherSubstitutesController < ApplicationController
 
   def index
     @kosher_substitutes = KosherSubstitute.all
+    render json: @kosher_substitutes.as_json
   end
 
   def show
     @kosher_substitute = KosherSubstitute.find(params[:id])
+    render json: @kosher_substitute.find_by(params[:id]).as_json
   end
 end
